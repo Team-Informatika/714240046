@@ -3,8 +3,8 @@ import { renderHTML, setInner } from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.
 
 getJSON("https://t.if.co.id/json/zahra.json","null","null", rensponseFunction);
 function rensponseFunction(response){
-    console.log ('HTTP Status:', response.status);
-    console.log ('response.data:', response.data);
+    console.log('HTTP Status:', response.status);
+    console.log('response.data:', response.data);
 }
 
 
