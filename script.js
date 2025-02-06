@@ -1,11 +1,10 @@
 import{getJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.0/api.js"
 import { renderHTML, setInner } from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.0/element.js";
 
-getJSON("https://t.if.co.id/json/zahra.json","null","null", rensponseFunction);
-function rensponseFunction(response){
-    console.log('HTTP Status:', response.status);
-    console.log('response.data:', response.data);
-}
+fetch("https://t.if.co.id/json/zahra.json")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error("Error fetching JSON:", error));
 
 
 
