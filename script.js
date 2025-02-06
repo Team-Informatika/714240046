@@ -6,6 +6,11 @@ function rensponseFunction(response){
     console.log ('HTTP Status:', response.status);
     console.log ('response.data:', response.data);
 }
+
+
+
+
+
 function openInfo() {
     document.getElementById('user-box').classList.remove('hide-details');
 }
