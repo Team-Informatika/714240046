@@ -1,6 +1,5 @@
 import{getJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.0/api.js"
 import { renderHTML, setInner } from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.1/element.js";
-renderHTML("Card", "render.html")
 getJSON("https://t.if.co.id/json/zahra.json","null","null", rensponseFunction);
 function rensponseFunction(response){
     console.log('HTTP Status:', response.status);
@@ -10,14 +9,12 @@ function rensponseFunction(response){
     setInner('location', response.data.profileCard.container.user.info.name.description.location);
 }
 
+let userBox = document.getElementById("userBox");
 
-
-
-
-function openInfo() {
-    document.getElementById('user-box').classList.remove('hide-details');
+function openinfo() {
+    userBox.classList.remove("hide-details");
+    renderHTML("Card", "render.html");
 }
-
-function closeInfo() {
-    document.getElementById('user-box').classList.add('hide-details');
+function closeinfo() {
+    userBox.classList.add("hide-details");
 }
