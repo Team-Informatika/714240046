@@ -6,6 +6,8 @@ function rensponseFunction(response){
     console.log('HTTP Status:', response.status);
     console.log('response.data:', response.data);
     setInner('nama', response.data.profileCard.container.user.info.name);
+    setInner('description', response.data.profileCard.container.user.info.name.description);
+    setInner('location', response.data.profileCard.container.user.info.name.description.location);
 }
 
 
