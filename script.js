@@ -10,7 +10,7 @@ function responseFunction(response) {
     console.log('HTTP Status:', response.status);
     console.log('Response Data:', response.data);
     const username = response.data.card.infos.username
-    console.log(username);
     setInner('nama', username);
+    setInner('label', response.data.card.infos.label);
 }
 
