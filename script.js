@@ -6,3 +6,5 @@ function rensponseFunction(response){
     console.log('response.data:', response.data);
     setInner('nama', response.data.card.infos.username);
 }
+
+renderHTML('render', 'render.html')
