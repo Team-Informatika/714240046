@@ -7,26 +7,48 @@
     <title>Zahra Profile Card</title>
 </head>
 <body>
-    <div class="card center">
-        <div class="avatar">
-          <img src="images/Green Gradient Minimalist Simple Instagram Profile Picture.png" class="is-circle" />
-        </div>
-        <div class="infos">
-          <p class="username">ZAHRA</p>
-          <p class="label">Junior developer</p>
-          <p class="description">Passionate developer with a focus on ethical coding, security, and open-source projects.</p>
-          <p class="rate">Rate: 50K/hour</p>
-          <a href="https://github.com/Zahra" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-          <a href="https://mastodon.xyz/Zahra" target="_blank"><i class="fab fa-mastodon fa-lg"></i></a>
-          <a href="https://www.reddit.com/Zahra" target="_blank"><i class="fab fa-reddit fa-lg"></i></a>
-          <a href="https://keybase.io/Zahra" target="_blank"><i class="fab fa-keybase fa-lg"></i></a>
-          <a href="https://codepen.io/Zahra" target="_blank"><i class="fab fa-codepen fa-lg"></i></a>
-          <a href="https://news.Zahra" target="_blank"><i class="fab fa-hacker-news fa-lg"></i></a>
-          <a href="https://wa.me/6285759790334" target="_blank" class="website">chat me here, for the appointment!</a>
-        </div>
-      </div>      
+    <div class="container">
+        <section id="Card"></section>
+       <!-- <div class="user hide-details" id="userBox"> -->
+            <!-- <img src="images/Green Gradient Minimalist Simple Instagram Profile Picture.png" alt="zahra" onclick="openinfo()"> -->
+            <!-- <div class="info"> -->
+                <!-- <h1>Fatimah Azzahra</h1> -->
+                <!-- <p>A passionate web developer with experience <span>in building responsive and user-friendly websites.</span></p> -->
+                <!-- <p>Location: Bandung</p> -->
+                <!-- <p>Skills: HTML, CSS, JavaScript and Figma</p> -->
+                <!-- <p>Interests: Web Development, UI/UX Design, Open Source Contribution</p> -->
+                <!-- <p>Rate: $5 per hour</p> -->
+                <!-- <div class="social-media"> -->
+                    <!-- <a href="https://github.com/itzzahra16" target="_blank">GitHub</a> -->
+                    <!-- <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a> -->
+                    <!-- <a href="https://api.whatsapp.com/send?phone=6285759790334">Connect with me</a> -->
+                <!-- </div> -->
+                <!-- <div class="close-icon" onclick="closeinfo()"></div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    </div>
 
     <script type="module" src="script.js"></script>
+
+    <script>
+        let userBox = document.getElementById("userBox");
+
+        function openinfo() {
+            userBox.classList.remove("hide-details");
+        }
+        function closeinfo() {
+            userBox.classList.add("hide-details");
+        }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENYE3D9P1P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ENYE3D9P1P');
+    </script>
 
 </body>
 </html>
