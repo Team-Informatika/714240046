@@ -12,5 +12,10 @@ function responseFunction(response) {
     const username = response.data.card.infos.username
     setInner('nama', username);
     setInner('label', response.data.card.infos.label);
+    setInner('description', response.data.card.infos.description);
+    setInner('rate', response.data.card.infos.rate);
+    const url = response.data.card.infos.contact.url
+    const text = response.data.card.infos.contact.text
+    setInner('contact' `<a href="${url} target="_blank" class="website"">${text}</a>`);
 }
 
