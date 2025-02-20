@@ -8,13 +8,3 @@ function rensponseFunction(response){
     setInner('description', response.data.profileCard.container.user.info.name.description);
     setInner('location', response.data.profileCard.container.user.info.name.description.location);
 }
-
-let userBox = document.getElementById("userBox");
-
-function openinfo() {
-    userBox.classList.remove("hide-details");
-    renderHTML("Card", "render.html");
-}
-function closeinfo() {
-    userBox.classList.add("hide-details");
-}
