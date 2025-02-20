@@ -4,7 +4,7 @@ getJSON("https://t.if.co.id/json/zahra.json","null","null", rensponseFunction);
 function rensponseFunction(response){
     console.log('HTTP Status:', response.status);
     console.log('response.data:', response.data);
-    setInner('nama', response.data.profileCard.container.user.info.name);
+    setInner('nama', response.data.card.infos.username);
     setInner('description', response.data.profileCard.container.user.info.name.description);
     setInner('location', response.data.profileCard.container.user.info.name.description.location);
 }
