@@ -4,7 +4,9 @@ getJSON("https://t.if.co.id/json/zahra.json",null,null, responseFunction);
 function responseFunction(response) {
     console.log('HTTP Status:', response.status);
     console.log('Response Data:', response.data);
-    setInner('nama', response.data.card.infos.username);
+    const username = response.data.card.infos.username
+    console.log(username);
+    setInner('nama', username);
 }
 
 renderHTML('render', 'render.html')
